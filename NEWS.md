@@ -1,5 +1,4 @@
-# TreeMineR 1.0.0
+# TreeMineR 1.0.1
 
-# TreeMineR 0.1.0
-
-* Initial CRAN submission.
+* Removed `data.table` from depend field in DESCRIPTION.
+* Improved documentation

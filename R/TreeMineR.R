@@ -40,7 +40,7 @@
 #' @param n_unexposed Number of unexposed individuals (Optional).
 #'
 #' @param dictionary
-#'   A data.frame that includes one `node` column and a `title` column,
+#'   A `data.frame` that includes one `node` column and a `title` column,
 #'   which are used for labeling the cuts in the output of `TreeMineR`.
 #'
 #' @param delimiter
@@ -59,14 +59,15 @@
 #'
 #' @references Kulldorff et al. (2003)
 #'  A tree-based scan statistic for database disease surveillance.
-#'  Biometrics 56(2): 323–331. DOI: 10.1111/1541-0420.00039.
+#'  Biometrics 56(2): 323-331. DOI: 10.1111/1541-0420.00039.
 #'
 #' @examples
 #' TreeMineR(data = diagnoses,
 #'           tree  = icd_10_se,
 #'           p = 1/11,
 #'           n_monte_carlo_sim = 99,
-#'           random_seed = 1234)
+#'           random_seed = 1234) |>
+#'   head()
 #'
 #' @return A `data.frame` with the following columns:
 #'   \describe{
